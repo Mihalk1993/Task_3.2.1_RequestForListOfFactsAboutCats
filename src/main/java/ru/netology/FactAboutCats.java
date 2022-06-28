@@ -8,7 +8,7 @@ public class FactAboutCats {
     private String text;
     private String type;
     private String user;
-    private String upvotes;
+    private int upvotes;
 
     public FactAboutCats() {
     }
@@ -18,7 +18,7 @@ public class FactAboutCats {
             @JsonProperty("text") String text,
             @JsonProperty("type") String type,
             @JsonProperty("user") String user,
-            @JsonProperty("upvotes") String upvotes
+            @JsonProperty("upvotes") int upvotes
     ) {
         this.id = id;
         this.text = text;
@@ -45,7 +45,7 @@ public class FactAboutCats {
         return user;
     }
 
-    public String getUpvotes() {
+    public int getUpvotes() {
         return upvotes;
     }
 
@@ -67,7 +67,7 @@ public class FactAboutCats {
         this.user = user;
     }
 
-    public void setUpvotes(String upvotes) {
+    public void setUpvotes(int upvotes) {
         this.upvotes = upvotes;
     }
 

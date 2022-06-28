@@ -41,8 +41,7 @@ public class Main {
 
         System.out.println("Факты о кошках, за которые проголосовали другие пользователи:");
         facts.stream()
-                .filter(value -> value.getUpvotes() != null)
-                .filter(value -> Integer.parseInt(value.getUpvotes()) > 0)
+                .filter(value -> value.getUpvotes() > 0)
                 .forEach(System.out::println);
     }
 }
